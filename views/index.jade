@@ -1,0 +1,50 @@
+include mario/mario.html
+
+script(src='/bower_components/jquery/dist/jquery.min.js')
+script(src='/socket.io/socket.io.js')
+script(type='text/javascript').
+	var socket = io.connect('http://localhost');
+	socket.on('data', function (data) {
+
+		if(data === "Right"){
+			stop();
+			keydown(39);
+		}
+		else if(data === "Left"){
+			stop();
+			keydown(37);
+		}
+		else if(data === "JumpRight"){
+			stop();
+			keydown(39);
+			keydown(38);
+		}
+		else if(data === "JumpLeft"){
+			stop();
+			keydown(37);
+			keydown(38);
+		}
+		else if(data === "Jump"){
+			stop();
+			keydown(38);
+		}
+		else if(data === "Down"){
+			stop();
+			keydown(40);
+		}
+		else if(data === "Fireball"){
+			stop();
+			keydown(16);
+		}
+		else {
+			stop();
+		}
+	});
+	
+	function stop() {
+		keyup(37);
+		keyup(38);
+		keyup(39);
+		keyup(40);
+		keyup(16);
+	}

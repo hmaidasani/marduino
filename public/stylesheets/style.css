@@ -1,0 +1,91 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.title {
+	padding: 10px;
+}
+
+#leftPanel {
+	width:50%;
+	float:left;
+}
+#rightPanel {
+	width:50%;
+	float:left;
+}
+.graph {
+	/*float: left;*/
+/*	height: 400px;
+	width: 500px;*/
+	padding: 10px 20px;
+}
+.graph-title {
+	padding: 0 0 5px 0px;
+	/*text-align:center;*/
+}
+
+.container {
+	box-sizing: border-box;
+	width: 600px;
+	height: 350px;
+	padding: 20px 15px 15px 15px;
+	margin: 5px auto 20px auto5
+	border: 1px solid #ddd;
+	background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+	-o-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.placeholder {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 1.2em;
+}
+
+.yaxisLabel {
+	top: 50%;
+	left: 2px;
+	transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+}
+.axisLabel {
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+}
+.rawData {
+	position: fixed;
+}
+.rawData ul {
+	width: 600px;
+	overflow-x: auto;
+}
